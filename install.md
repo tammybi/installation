@@ -2,17 +2,17 @@
 
  ## 一 安装需求
  
- ### 1. java8及以上的版本
+ ###1. java8及以上的版本
  
- ### 2. github 帐号一个 
+ ###2. github 帐号一个 
  
  github上需要有一个帐号，同时将自己本机的id_rsa.pub文件中的key放到github上
  
- ### 3. coding.net 帐号一个
+ ###3. coding.net 帐号一个
  
  项目源代码保管在coding.net上，如果你要加入进来，请准备一个帐号。
  
- ### 4. mysql或者mariaDB
+ ###4. mysql或者mariaDB
  
  启动项目前需要导入一个数据库文件。
  为了防止以后的真实数据导入失败，最好能够自己手动的在命令行进行导入数据。
@@ -24,7 +24,7 @@
   use databaseName;
   source file.sql;
   ```
-  ### 5.  git 基本命令
+###5.  git 基本命令
    ``` 
   git clone XXX
   git pull origin(仓库名字) master(分支名字)
@@ -43,9 +43,9 @@
   
   欢迎你的提问，咱们共同进步！
   
-  ## 二 安装步骤
+## 二 安装步骤
   
-  ### 1 拉（pull）代码
+###1 拉（pull）代码
   
   * 确定你已经有相应项目以及各个组件的访问权限后，将源代码clone到本地。
   * clone完后，进入主目录app-XXXXX .执行 git submodule ,查看所有的附加组件
@@ -53,7 +53,7 @@
   * 删除完这些组件后，执行 git submodule init 进行初始化
   * 初始化完成，执行  git submodule update 更新代码
   
-  ### 2 修改配置
+###2 修改配置
   
    在pylon 的同级目录中，你会看到app-XXXX文件夹, 然后找到以下文件，修改相应的配置
    ```
@@ -64,7 +64,8 @@
         password: 123456（密码）
         
    ```
-  ### 3 启动，下载。 
+ 
+ ###3 启动，下载。 
   
    * 去到项目根目录下执行
    ```
@@ -98,7 +99,7 @@
   * 重新进入项目根目录。执行.startup.sh 。 
   * 如果你发现下载gradle的速度特别慢，想一想这是中国，就不会觉得奇怪了。当然如果你会科学上网的话，自己想办法下载的快一点吧。
  
- ## 注意事项
+##注意事项
  
  1 发现类似 NOT FOUND 类似的报错，别着急。 应该是你的submodule 没有处理好。
  git submodule update 试试
