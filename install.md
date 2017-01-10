@@ -44,13 +44,17 @@
   欢迎你的提问，咱们共同进步！
   
   ## 二 安装步骤
+  
   ### 1 拉（pull）代码
+  
   * 确定你已经有相应项目以及各个组件的访问权限后，将源代码clone到本地。
   * clone完后，进入主目录app-XXXXX .执行 git submodule ,查看所有的附加组件
   * 你会看到类似 pylon，addon-gateway, addon-totoro ，这样的文件夹。 删除这些文件夹。
   * 删除完这些组件后，执行 git submodule init 进行初始化
   * 初始化完成，执行  git submodule update 更新代码
+  
   ### 2 修改配置
+  
    在pylon 的同级目录中，你会看到app-XXXX文件夹, 然后找到以下文件，修改相应的配置
    ```
    app-XXXXX/src/main/resources/application.yaml 
@@ -59,9 +63,9 @@
         username: root （用户名）
         password: 123456（密码）
         
-        
    ```
   ### 3 启动，下载。 
+  
    * 去到项目根目录下执行
    ```
   ./startup.sh
@@ -95,6 +99,7 @@
   * 如果你发现下载gradle的速度特别慢，想一想这是中国，就不会觉得奇怪了。当然如果你会科学上网的话，自己想办法下载的快一点吧。
  
  ## 注意事项
+ 
  1 发现类似 NOT FOUND 类似的报错，别着急。 应该是你的submodule 没有处理好。
  git submodule update 试试
  2 每次提交代码之前，pull一下线上的代码，进行合并。
