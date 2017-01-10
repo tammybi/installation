@@ -1,10 +1,17 @@
 # 安装说明
+
  ## 一 安装需求
+ 
  ### 1. java8及以上的版本
+ 
  ### 2. github 帐号一个 
+ 
  github上需要有一个帐号，同时将自己本机的id_rsa.pub文件中的key放到github上
+ 
  ### 3. coding.net 帐号一个
+ 
  项目源代码保管在coding.net上，如果你要加入进来，请准备一个帐号。
+ 
  ### 4. mysql或者mariaDB
  
  启动项目前需要导入一个数据库文件。
