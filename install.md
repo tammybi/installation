@@ -77,7 +77,9 @@
    在家目录下，找到隐藏文件夹".gradle"
    进入文件夹,创建一个文件 init.gradle
    将以下代码写入：
-   ```
+   
+   
+```
    allprojects{
        repositories {
            def REPOSITORY_URL = 'http://maven.aliyun.com/nexus/content/groups/public'
@@ -97,6 +99,7 @@
    }
    
 ```
+
   * 重新进入项目根目录。执行.startup.sh 。 
   * 如果你发现下载gradle的速度特别慢，想一想这是中国，就不会觉得奇怪了。当然如果你会科学上网的话，自己想办法下载的快一点吧。
  
